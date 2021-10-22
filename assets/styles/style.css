@@ -51,7 +51,7 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    top: 100px;
+    top: 170px;
     margin: auto;
 }
 .tituloNome {   
@@ -59,12 +59,14 @@ header {
     font-size: 4.5rem;
     font-weight: lighter;
     color: #B37B83;
+    margin: 0;
 }
 
 .profissao {
     text-transform: uppercase;
     font-size: 1.56rem;
     color: #634D51;
+    margin-bottom: 50px;
 }
 
 .saudacao{
@@ -85,13 +87,18 @@ color: #634D51;
 
 }
 
-/* Sessão Quem source */
+/* Sessão Quem sou eu */
 
 .quemSou{
     margin-top:-25px;
     color: #662830;
     text-align: center;
     font-size: 2rem;
+    
+}
+
+.conteudoSobre {
+    display: flex;
 }
 .quemSou h2::after{
     content: "";
@@ -100,5 +107,29 @@ color: #634D51;
     height: 3px;
     background:#E1CABB;
     margin: 8px auto;
+}
+
+.quemSou img {
+    border-radius: 50%;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.quemSou img:hover {
+    width: 220px;
+    transition: 1s;
+}
+
+.textoSobre {
+    font-size: 1.2rem;
+    justify-content: center;
+    padding-left: 150px;
+    margin-top: 25px;
+}
+
+.desce {
+    color: #B37B83;
+    font-size: 1rem;
+    text-align: center;
 }
 
