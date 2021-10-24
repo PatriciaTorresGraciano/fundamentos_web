@@ -2,6 +2,7 @@
 
 *{
     font-family: 'Montserrat', 'Arial';
+  
 }
 header {
     display: flex;
@@ -37,10 +38,8 @@ header {
     
 }
 .container {
-    /* background-color: blanchedalmond; */
     background-image: url(../img/bgHeader.png);
     height: 590px;
-    
     position: relative;
     text-align: center;
 }
@@ -51,7 +50,7 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    top: 100px;
+    top: 170px;
     margin: auto;
 }
 .tituloNome {   
@@ -59,12 +58,14 @@ header {
     font-size: 4.5rem;
     font-weight: lighter;
     color: #B37B83;
+    margin: 0;
 }
 
 .profissao {
     text-transform: uppercase;
     font-size: 1.56rem;
     color: #634D51;
+    margin-bottom: 50px;
 }
 
 .saudacao{
@@ -74,7 +75,7 @@ margin-bottom: 54px;
 color: #634D51;
 }
 
-.container a {
+.btn {
     color: #B37B83;
     border: solid #B37B83 1px;
     font-size: 1.2rem;
@@ -82,18 +83,17 @@ color: #634D51;
     text-transform: uppercase;
     text-decoration: none;
     padding: 5px 15px 5px 15px;
+    align-items: center;
 
 }
-
-/* Sessão Quem source */
-
-.quemSou{
-    margin-top:-25px;
+.subtitulo {
+    margin-top:30px;
     color: #662830;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2rem; 
 }
-.quemSou h2::after{
+
+.subtitulo h2::after{
     content: "";
     display: block;
     width: 60px;
@@ -101,4 +101,215 @@ color: #634D51;
     background:#E1CABB;
     margin: 8px auto;
 }
+
+/* Sessão Quem sou eu */
+
+.subtituloQuemSou {
+    margin-top:100px;
+    color: #662830;
+    text-align: center;
+    font-size: 2rem; 
+}
+
+.conteudoSobre {
+    display: flex;
+}
+.subtituloQuemSou h2::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background:#E1CABB;
+    margin: 8px auto;
+}
+
+.imgPerfil {
+    border-radius: 50%;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.imgPerfil:hover {
+    width: 220px;
+    transition: 1s;
+}
+
+.textoSobre {
+    font-size: 1.2rem;
+    justify-content: center;
+    padding-left: 150px;
+    margin-top: 25px;
+}
+
+.desce {
+    color: #B37B83;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.desce img {
+    margin-top: 25px;
+}
+
+/* Habilidades */
+
+#habilidades {
+    background-color: #EFE4D1;
+    padding: 12px;
+}
+.coteudoHabilidades {
+    font-size: 1.5rem;
+    color: #B37B83;
+    line-height: 3rem;
+    display: inline-flex;
+    justify-content: center; 
+}
+
+.listaHabilidades{
+    list-style-type: none;
+}
+
+.listaHabilidades img {
+    width: 25px;
+    padding-right: 10px;
+}
+
+/* Sessão Portfólio */
+/* Projeto 1 */
+
+.conteudoPortfolio {
+    display: inline-flex;
+    margin: 50px 0px 50px 0px;
+}
+
+.imgPort img {
+    width: 400px;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.txtPort {
+    justify-content: center;
+    color: #662830;
+    font-size: 1.5rem;
+    margin-left: 150px;
+    text-align: right;
+}
+
+.nomeProjeto {
+    color: #662830;
+    font-size: 1.3rem;
+}
+
+.linguagemProjeto {
+    color: #B37B83;
+    font-size: 1rem;
+}
+
+.verMais {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #662830;
+    font-weight: bold;
+}
+
+#portfolio a {
+    align-items: center;
+}
+
+/* Sessão de Contato */
+
+#contato {
+    background-color: #EFE4D1;
+    padding: 20px;
+}
+
+.conteudoContato {
+    display: inline-flex;
+    align-items: top;
+    align-content: center;
+}
+
+.conteudoContato p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #B37B83;
+    
+}
+
+.form .email {
+    color: #634D51;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+}
+
+.form {
+    background-color: transparent;
+    border: solid #B37B83 1px;
+    justify-content: center;
+    font-size: 1rem;
+    color:#662830;
+    padding: 2px 20px 20px 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form input{
+    color: #634D51;
+    background-color: transparent;
+    border: #B37B83 solid 1px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.form textarea {
+    background-color: transparent;
+    border: solid #B37B83 1px;
+    text-align: left;
+    margin-top: 10px ;
+}
+
+.btnEnviar {
+    color: #B37B83;
+    border: solid #B37B83 1px;
+    font-size: 0.8rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+}
+
+.mapa {
+    justify-content: right;
+    font-size: 1.3rem;
+    color: #B37B83;
+    margin: 0px 0px 0px 100px;
+    text-align: left;
+}
+
+/* Rodapé */
+
+.icones {
+    align-content: center;
+    padding: 270px 0px 0px 100px;
+}
+
+.icones img {
+    width: 55px;
+    height: 50px;
+}
+
+footer {
+    background-color: #B37B83;
+    color: #FFF;
+    font-size: 0.8rem;
+    padding: 4px;
+    text-align: center;
+}   
+
+
+
+
+
 

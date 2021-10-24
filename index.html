@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="./assets/img/iconPT.png">
     <title>Patrícia</title>
     <link href="./assets/styles/style.css" rel="stylesheet">
 </head>
 
 <header>
-    <img src="./assets/img/logoPatricia.svg" alt="Logo">
+   <a href="/index.html"><img src="./assets/img/logoPatricia.svg" alt="Logo"></a> 
     <ul id="menu">
         <li>
-            <a href="index.html">Sobre</a>
+            <a href="#quemSou">Sobre</a>
         </li>
         <li>
-            <a class="menuPortfolio" href="portfolio.html">Portfólio</a>
+            <a  class="menuPortfolio" href="#portfolio">Portfólio</a>
         </li>
         <li>
-            <a href="contato.html">Contato</a>
+            <a href="#contato">Contato</a>
         </li>
     </ul>
 </header>
@@ -30,14 +31,127 @@
             <p class="tituloNome">Patrícia Torres</p>
             <p class="profissao">Desenvolvedora Full Stack</p>
             <p class="saudacao">Olá, seja bem vindo (a)! </p>
-            <a href="portfolio.html">Portfólio</a>
+            <a class="btn" href="#portfolio">Portfólio</a>
         </div>
     </div>
 
-    <section class="quemSou">
+    <section class="subtituloQuemSou" id="quemSou">
         <h2>Quem Sou</h2>
+        <div class="conteudoSobre">
+            <div> 
+                <img class="imgPerfil" src="assets/img/patriciaPerfil.png" alt="Patrícia" width="200px">
+            </div>
+    <div class="textoSobre">
+        <p> Olá, sou Patrícia, tenho 24 anos, sou formada em Design Gráfico, atualmente curso </p>
+        <p>Análise e Desenvolvimento de Sistemas e participo do bootcamp da Generation Brasil </p>
+        <p>com formação em Desenvolvimento Java Full Stack.</p>
+
+    </div>
+    
     </section>
 
+    <div class="desce">
+        <p >Desce para conhecer minhas habilidades :)</p>
+        <img src="assets/img/seta.png" width="25px">
+    </div>
+
+    <section class="subtitulo" id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="coteudoHabilidades">
+            <ul class="listaHabilidades">
+                <li><img src="/assets/img/html5.svg">HTML</li>
+                <li><img src="/assets/img/css3.svg">CSS</li>
+                <li><img src="/assets/img/javascript.svg">JavaScript</li>
+                <li><img src="/assets/img/react.svg">React Js</li>
+                <li><img src="/assets/img/figma.svg">Figma</li>
+               
+            </ul>
     
+            <ul class="listaHabilidades">
+                <li><img src="/assets/img/xd.svg">Adobe XD</li>
+                <li><img src="/assets/img/java.svg">Java</li>
+                <li><img src="/assets/img/spring.svg">Spring Boot</li>
+                <li><img src="/assets/img/mysql.svg">Mysql</li>
+                <li><img src="/assets/img/github.svg">GitHub</li>
+                
+            </ul>
+        </div>
+        
+    </section >
+       
+    <section class="subtitulo" id="portfolio">
+        <h2>Portfólio</h2>
+
+            <div class="conteudoPortfolio">
+                <div class="imgPort">
+                    <img src="/assets/img/imgPortfolio.png">
+                </div>
+               
+                <div class="txtPort">
+                    <p class="nomeProjeto">Projeto tal</p>
+                    <p class="linguagemProjeto">Desenvolvido em tal linguagem</p>
+                    <p class="verMais">Ver Mais + </p>
+                </div>
+            </div>
+
+            <div>
+                <a class="btn" href="portfolio.html">Ver mais projetos</a>
+            </div>
+        
+    </section> 
+
+    <section class="subtitulo" id="contato" >
+        <h2>Contato</h2>
+      
+        <div class="conteudoContato">
+            <div class="form">
+                <p>Entre em contato comigo</p>
+                <p class="email">patricia.dstorres@hotmail.com</p>
+                <form>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                    <br>
+                    <br>
+        
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+                    <br>
+                    <br>
+        
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto">
+                    <br>
+                    <br>
+        
+                    <label for="mensagem">Mensagem</label>
+                    <br>
+                    <textarea  name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+                    <br>
+                    <br>
+
+                    <button class="btnEnviar">Enviar</button>
+                  
+                </form>
+            </div>
+            
+            <div class="mapa">
+                <p>Endereço: </p>
+                <p>São Bernardo do Campo - SP</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233625.61942458144!2d-46.67183610336866!3d-23.804360371490656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce3fc6927dd0c3%3A0xcdcd0d550f9656cf!2sS%C3%A3o%20Bernardo%20do%20Campo%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1634946673182!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+            <div class="icones">
+                <a href="https://github.com/PatriciaTorresGraciano" target="_blank"><img src="/assets/img/iconeGitHub.png"></a>
+                <a href="https://www.linkedin.com/in/patr%C3%ADciatorres/" target="_blank"><img src="/assets/img/iconeLinkedin.png"></a>
+            </div>
+        </div>
+
+       
+       
+    </section>
+
+<footer>
+    <p>	&copy; 2021 - Patrícia Torres</p>
+</footer>
 
 </body>
